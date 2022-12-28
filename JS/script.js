@@ -8,25 +8,30 @@ function grade(){
     // 2) fontSize CSS 속성을 '30px' 로 변경
 
     // document.getElementById('total').style.fontSize = '30px';
-    $('#total').css({
-        fontSize:30 
-    });
+    // $('#total').css({
+    //     fontSize:30 
+    // });
+    // $('#total').css("fontSize",30);
+    $('#total').css("fontSize", "30px");
 
     var kor1 = parseInt(document.getElementById("kor1").innerHTML);
     var kor2 = parseInt(document.getElementById("kor2").innerHTML);
     var first = document.getElementById("first_g");
     first.innerHTML=kor1+kor2;
-    first.style.color="red";
+    //first.style.color="red";
+    $("#first_g").css("color" ,"red");
 
     var eng1 = parseInt(document.getElementById("eng1").innerHTML);
     var eng2 = parseInt(document.getElementById("eng2").innerHTML);
     var second=document.getElementById("second_g");
     second.innerHTML=eng1+eng2;
-    second.style.color="red";
+    //second.style.color="red";
+    $("#second_g").css("color" ,"red");
 
     var math1 = parseInt(document.getElementById("math1").innerHTML);
     var math2 = parseInt(document.getElementById("math2").innerHTML);
     var third = document.getElementById("third_g");
     third.innerHTML=math1+math2;
-    third.style.color="red";
+    //third.style.color="red";
+    $("#third_g").css("color" ,"red");
 }
